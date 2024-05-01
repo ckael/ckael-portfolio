@@ -1,0 +1,26 @@
+
+.Link{
+    text-transform: none !important;
+}
+*{margin: auto;}
+.text{
+    display: inline!important;
+}
+.img{
+    max-width: 90%;
+    height: auto;
+}
+.Title
+{
+    align-self: center !important;
+    width: 100px!important;
+    border-bottom:solid;
+    border-color: #FFFF33!important;
+   
+}
+.TitleContainer
+{
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+}
