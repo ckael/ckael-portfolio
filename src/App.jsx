@@ -1,7 +1,11 @@
 
 import Navbar from "./Navbar";
 import Home from "./Home";
-import About from "./About"
+import About from "./About";
+import Skills from "./Skills";
+import Education from "./Education";
+import Contact from "./Contact";
+import "./style.css";
 import { createTheme,ThemeProvider } from "@mui/material";
 function App() {
   const theme = createTheme({
@@ -13,17 +17,17 @@ function App() {
       secondary:{
         main:'#FFFFFF'
       }
-    },
-    typography:{
-      fontFamily:'Arial'
     }
   })
   return (
     < >
     <ThemeProvider theme={theme}>
         <Navbar/>
-        <Home/>
+        <Home />
         <About/>
+        <Skills/>
+        <Education/>
+        <Contact/>
     </ThemeProvider>
     </>
   )

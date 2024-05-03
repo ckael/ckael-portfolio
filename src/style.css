@@ -1,0 +1,51 @@
+
+.Link{
+    text-transform: none !important;
+}
+*{margin: auto; }
+.text{
+    display: inline!important;
+}
+.img{
+    max-width: 90%;
+    height: auto;
+    
+}
+.myTextField
+{
+   color: #FFFF33!important;
+}
+
+.Title
+{
+    align-self: center !important;
+    width: auto!important;
+    border-bottom:solid;
+    border-color: #FFFF33!important;
+   
+}
+
+.bar{
+    background-color: #212121!important;
+}
+.TitleContainer
+{
+    margin-top: 2%;
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+}
+.About
+{
+    border: solid;
+    border-color: #FFFF33;
+    border-radius: 40px;
+}
+.myCard
+{
+    background-color: #212121 !important;
+    margin-top: 10px;
+    box-shadow: 9px 9px 1px -1px rgba(0,0,0,0.2), 
+                0px 1px 1px 0px rgba(0,0,0,0.14), 
+                0px 1px 3px 0px rgba(0,0,0,0.12)!important
+}
