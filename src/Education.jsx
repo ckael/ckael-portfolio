@@ -1,7 +1,7 @@
 import { Container,Grid,Typography,Card,CardContent } from "@mui/material";
 
 const Education = () => {
-    return ( <div id="education">
+    return ( <div id="Educations">
         <Container>
                 <Grid container columnSpacing={4} rowSpacing={4} marginTop={2} >
                     <Grid item lg={6} md={6} sm={12} xs={12}>

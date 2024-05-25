@@ -4,14 +4,14 @@ import Cv from '/pdf/RiantsoaCkael.pdf'
 const Home = () => {
 
     return (
-        <div id="home">
+        <div id="Home">
             <Container >
                 <Grid  container alignItems="center">
                     <Grid item lg={7} sm={12} md={7} marginTop={5}>
                         <Typography  color="primary" variant="body1"><strong>👋HELLO!👋</strong></Typography><br />
                         <Typography color="secondary" variant="h4"><strong>I Am Riantsoa Ckaël</strong></Typography><br />
-                        <Typography color="secondary"  variant="body1">
-                            <strong>I am a</strong> <Typography className="text"  color="primary" variant="body1">
+                        <Typography color="secondary"  variant="h6">
+                            <strong>I am a</strong> <Typography className="text"  color="primary" variant="inherit">
                                 <strong>web developper</strong>
                             </Typography>
                         </Typography>

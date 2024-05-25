@@ -1,7 +1,7 @@
 import { Button, Grid, TextField, Typography, Container } from "@mui/material";
 
 const Contact = () => {
-    return (<div id="contact" >
+    return (<div id="Contact" >
         <div className="TitleContainer"><Typography className="Title" variant="h6" color="primary">Contact</Typography></div>
         <Grid container  justifyContent="center" >
             <Grid item lg={6} md={6} sm={9} xs={9}>

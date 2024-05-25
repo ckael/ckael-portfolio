@@ -2,7 +2,7 @@ import { Grid, Typography ,Card,CardContent} from "@mui/material";
 import { Code, Stars, DataObject } from "@mui/icons-material";
 
 const Skills = () => {
-    return ( <div id="skills">
+    return ( <div id="Skills">
         <div className="TitleContainer"><Typography variant="h6" color="primary" textAlign="center" width="auto" className="Title"><strong>Skills</strong></Typography></div>
         <Grid container marginTop={2} rowSpacing={2} columnSpacing={2} padding={1}>
             <Grid item lg={4} md={4} sm={12} xs={12} textAlign={'center'}>
