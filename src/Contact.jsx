@@ -26,6 +26,8 @@ const Contact = () => {
                 </form>
             </Grid>
         </Grid>
+        <Typography variant="body2" color="secondary" align="center"> Copyright © 2024 All rights reserved by<Button  variant="text" size="large" color="primary" className="Link" href="https://www.linkedin.com/in/riantsoa-ckael-ranaivomanana-7706892a8/" >Riantsoa Ckael</Button></Typography>
+
     </div >);
 }
 

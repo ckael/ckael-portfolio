@@ -15,7 +15,7 @@ const Navbar = () => {
                                             <Button className="Link"  color="primary" href="#home" variant="text"><strong>Home</strong></Button> 
                                             <Button className="Link"  color="secondary" href="#about" variant="text"><strong>About</strong></Button>
                                             <Button className="Link" color="secondary" href="#skills" variant="text"><strong>Skills</strong></Button>
-                                            <Button className="Link" color="secondary" href="#education" variant="text"><strong>Education</strong></Button>
+                                            <Button className="Link" color="secondary" href="#education" variant="text"><strong>Educations</strong></Button>
                                             <Button className="Link" color="secondary" href="#contact" variant="text"><strong>Contact</strong></Button>
                                     </Grid>
                                 </Grid>

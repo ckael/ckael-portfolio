@@ -5,7 +5,7 @@ const Education = () => {
         <Container>
                 <Grid container columnSpacing={4} rowSpacing={4} marginTop={2} >
                     <Grid item lg={6} md={6} sm={12} xs={12}>
-                        <Typography color="primary" variant="body1" className="Title"><strong>Education</strong></Typography>
+                        <Typography color="primary" variant="body1" className="Title"><strong>Educations</strong></Typography>
                         <Card className="myCard" >
                             <CardContent>
                                 <Typography variant="body1" color="primary"><strong>2020-2023</strong></Typography>
