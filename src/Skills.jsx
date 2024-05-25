@@ -10,10 +10,10 @@ const Skills = () => {
                     <CardContent>
                         <Code color="primary"/>
                         <Typography variant="body1" color="primary">Front-end</Typography>
-                        <Typography color="secondary" variant="body2"><strong>Frontend 1</strong></Typography>
-                        <Typography color="secondary" variant="body2"><strong>Frontend 1</strong></Typography>
-                        <Typography color="secondary" variant="body2"><strong>Frontend 1</strong></Typography>
-                        <Typography color="secondary" variant="body2"><strong>Frontend 1</strong></Typography>
+                        <Typography color="secondary" variant="body2"><strong>ReactJs</strong></Typography>
+                        <Typography color="secondary" variant="body2"><strong>JQuery/Bootstrap/MaterialUI</strong></Typography>
+                        <Typography color="secondary" variant="body2"><strong>HTML/CSS/JS</strong></Typography>
+                        
                     </CardContent>
                 </Card>
             </Grid>
@@ -22,9 +22,9 @@ const Skills = () => {
                     <CardContent>
                         <DataObject color="primary"/>
                         <Typography variant="body1" color="primary">Back-end</Typography>
-                        <Typography color="secondary" variant="body2"><strong>Backend 1</strong></Typography>
-                        <Typography color="secondary" variant="body2"><strong>Backend 1</strong></Typography>
-                        <Typography color="secondary" variant="body2"><strong>Backend 1</strong></Typography>
+                        <Typography color="secondary" variant="body2"><strong>Spring </strong></Typography>
+                        <Typography color="secondary" variant="body2"><strong>Hibernate/JPA</strong></Typography>
+                        <Typography color="secondary" variant="body2"><strong>MySQL/MongoDb/SQLite</strong></Typography>
                          
                     </CardContent>
                 </Card>
@@ -34,10 +34,10 @@ const Skills = () => {
                     <CardContent >
                         <Stars color="primary"/>
                         <Typography variant="body1" color="primary">Other skills</Typography>
-                        <Typography color="secondary" variant="body2"><strong>Skill 1</strong></Typography>
-                        <Typography color="secondary" variant="body2"><strong>Skill 1</strong></Typography>
-                        <Typography color="secondary" variant="body2"><strong>Skill 1</strong></Typography>
-                        <Typography color="secondary" variant="body2"><strong>Skill 1</strong></Typography>
+                        <Typography color="secondary" variant="body2"><strong>Git</strong></Typography>
+                        <Typography color="secondary" variant="body2"><strong>Adobe Illustrator/Photoshop</strong></Typography>
+                        <Typography color="secondary" variant="body2"><strong>Postman/Insomnia</strong></Typography>
+                        
                         
                     </CardContent>
                 </Card>

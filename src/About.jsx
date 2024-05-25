@@ -21,9 +21,9 @@ const About = () => {
                         </Grid>
                         <Grid item lg={3} md={3} sm={12} xs={12}>
                             <ButtonGroup >
-                                <IconButton color="primary"><GitHub /></IconButton>
-                                <IconButton color="primary"><FacebookRounded /></IconButton>
-                                <IconButton color="primary"><LinkedIn /></IconButton>
+                                <IconButton color="primary" href="https://github.com/ckael"><GitHub /></IconButton>
+                                <IconButton color="primary" href="https://www.facebook.com/mockael.ranaivomanana?eav=AfYTuiInrHkqs9mylCNkwCOoC3kKmxhI5QMA5j79XX0lj0rOQG-zoGVDeE3P-GKkngg&paipv=0&_rdc=1&_rdr"><FacebookRounded /></IconButton>
+                                <IconButton color="primary" href="https://www.linkedin.com/in/riantsoa-ckael-ranaivomanana-7706892a8/"><LinkedIn /></IconButton>
                             </ButtonGroup>
                         </Grid>
                     </Grid>
