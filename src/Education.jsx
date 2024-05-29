@@ -32,7 +32,7 @@ const Education = () => {
                         </Card>
                         <Card className="myCard" >
                             <CardContent>
-                                <Typography variant="body1" color="primary"><strong>2023</strong></Typography>
+                                <Typography variant="body1" color="primary"><strong>2019</strong></Typography>
                                 <Typography variant="body1" color="secondary"><strong>Commune Ankadikely Ilafy</strong></Typography><br />
                                 <Typography variant="body2" color="secondary">2 month internship</Typography>
                             </CardContent>
