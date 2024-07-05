@@ -1,13 +1,13 @@
 import { Container, Typography, Grid, IconButton, ButtonGroup } from "@mui/material";
-import Image from '/img/Calque1.png'
+import Image from '/img/avatar.png'
 import { GitHub, LinkedIn, FacebookRounded } from "@mui/icons-material";
 const About = () => {
     return (< div id="About">
         <Container >
             <div className="TitleContainer"><Typography variant="h6" color="primary" textAlign="center" width="auto" className="Title"><strong>About</strong></Typography></div>
             <Grid container marginTop={4} alignItems="center" >
-                <Grid item lg={4} md={4} sm={12} xs={12} alignContent="center" alignItems="center" alignSelf="center">
-                    <Grid item sm={12}><img  src={Image} alt="Pic2" className="img" /> </Grid>
+                <Grid item lg={4} md={4} sm={12} xs={12} alignContent="center" alignItems="center" >
+                    <Grid item textAlign="center" sm={12}><img   src={Image} alt="Pic2" className="avatar" /> </Grid>
                 </Grid>
                 <Grid className="About" item lg={8} padding={3} letterSpacing={3} xs={12} md={8} sm={12}  >
                     <Typography  variant="subtitle2" color="secondary">Name: <Typography className="text" color="primary" variant="body2">RANAIVOMANANA Riantsoa Ckaël</Typography></Typography><br />
