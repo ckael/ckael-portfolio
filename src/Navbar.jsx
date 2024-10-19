@@ -16,7 +16,7 @@ import { useState } from "react";
 import img from "/img/LOGO.png"
 
 const Navbar = () => {
-    const pages = ['Home', 'About', 'Skills','Educations','Contact'];
+    const pages = ['Home', 'About', 'Skills','Educations',,'Projects','Contact'];
     const [anchorElNav, setAnchorElNav] = useState(null);
 
     const handleOpenNavMenu = (event) => {

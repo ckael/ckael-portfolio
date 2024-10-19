@@ -13,7 +13,7 @@ const Education = () => {
                                 <Typography variant="body2" color="secondary">Information systems management degree</Typography>
                             </CardContent>
                         </Card>
-                        <Card className="myCard" >
+                        <Card className="myCard"  >
                             <CardContent>
                                 <Typography variant="body1" color="primary"><strong>2018-2019</strong></Typography>
                                 <Typography variant="body1" color="secondary"><strong>Anosizato West High school</strong></Typography><br />

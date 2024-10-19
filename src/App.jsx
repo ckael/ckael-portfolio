@@ -5,8 +5,11 @@ import About from "./About";
 import Skills from "./Skills";
 import Education from "./Education";
 import Contact from "./Contact";
+import Projects from "./Projects";
 import "./style.css";
 import { createTheme,ThemeProvider } from "@mui/material";
+import { motion } from "framer-motion";
+
 function App() {
   const theme = createTheme({
     palette:{
@@ -22,11 +25,12 @@ function App() {
   return (
     < >
     <ThemeProvider theme={theme}>
-        <Navbar/>
+       <motion.div initial={0} transition={0.2} animate={1}> <Navbar/> </motion.div>
         <Home />
         <About/>
         <Skills/>
         <Education/>
+        <Projects/>
         <Contact/>
     </ThemeProvider>
     </>
