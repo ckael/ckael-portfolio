@@ -1,32 +1,40 @@
 import { IconButton,Container,Typography,Grid ,Card,CardActions,CardMedia,CardContent} from "@mui/material";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import { GitHub} from "@mui/icons-material";
-import img from '/img/ProjectImg.png';
-
+import db from '../firebase';
+import { onSnapshot,collection } from "firebase/firestore";
 
 const Projects = () => {
-    const [Projet,setProjet] = useState(['1','2','3','4','5','6']);
-    
+    const [Projet,setProjet] = useState([]);
+    useEffect(()=>{
+        onSnapshot(collection(db, "Project"),(snapshot)=>
+            {
+                    setProjet(snapshot.docs.map((projets)=>projets.data()))
+            })
+    },[])
+
+
     return ( 
         <div id="Projects">
             <Container>
             <div className="TitleContainer">
                 <Typography variant = "h6" color="primary" className="Title">
-                      <strong>Projects</strong>  
+                    Projects  
                 </Typography>
-            </div>
+            </div><br />
                 <Grid container columnSpacing={2} rowGap={2} >
                         {
-                            Projet.map((projet)=>(
-                                <Grid item key={projet} sm = {12} lg = {4}>
+                            Projet.map((Projet)=>(
+                                <Grid item key={Projet.id} sm = {12} lg = {4}>
                                     <Card className="myCard"  >
-                                        <CardMedia image={img} component="img" height="200"/>
+                                        <CardMedia image={Projet.Img} component="img" width={200} height={200}/>
                                         <CardContent>
-                                            <Typography variant="h6" color="primary"><strong>Project title</strong></Typography>
-                                            <Typography variant = "body2" color="secondary">psam, cumque repellat recusandae dicta? Modi ducimus aperiam, sed porro repellendus laborum.</Typography>
+                                            <Typography variant="h6" color="primary">{Projet.Titre}</Typography><br />
+                                            <Typography variant = "body2" color="secondary">{Projet.Description}</Typography><br />
+                                            <Typography variant = "body2" color="secondary">{Projet.Tech}</Typography>
                                         </CardContent>
                                         <CardActions>
-                                            <IconButton size="large" color="secondary">
+                                            <IconButton size="large" color="secondary" href={Projet.Lien}>
                                                 <GitHub/>
                                             </IconButton>
                                             

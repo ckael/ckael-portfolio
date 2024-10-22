@@ -9,7 +9,6 @@ import Projects from "./Projects";
 import "./style.css";
 import { createTheme,ThemeProvider } from "@mui/material";
 import { motion } from "framer-motion";
-
 function App() {
   const theme = createTheme({
     palette:{
@@ -24,15 +23,17 @@ function App() {
   })
   return (
     < >
+    <motion.div initial={{scaleY:0, scaleX:0}} transition={{duration:1}} animate={{scaleY:1, scaleX:1}}> 
     <ThemeProvider theme={theme}>
-       <motion.div initial={0} transition={0.2} animate={1}> <Navbar/> </motion.div>
-        <Home />
+    <Navbar/> 
+      <Home />
         <About/>
         <Skills/>
         <Education/>
         <Projects/>
         <Contact/>
     </ThemeProvider>
+    </motion.div> 
     </>
   )
 }

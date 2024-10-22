@@ -14,6 +14,7 @@ import MenuItem from '@mui/material/MenuItem';
 import { Grid } from '@mui/material';
 import { useState } from "react";
 import img from "/img/LOGO.png"
+import { Scale } from '@mui/icons-material';
 
 const Navbar = () => {
     const pages = ['Home', 'About', 'Skills','Educations',,'Projects','Contact'];
@@ -75,9 +76,11 @@ const Navbar = () => {
                                     }}
                                     >
                                     {pages.map((page) => (
-                                        <MenuItem className="bar" key={page} onClick={handleCloseNavMenu}>
+                                       
+                                       <MenuItem className="bar" key={page} onClick={handleCloseNavMenu}>
                                         <Button className="Link" color="secondary"   href={"#"+page} variant="text"><strong>{page}</strong></Button> 
                                         </MenuItem>
+
                                     ))}
                                     </Menu>
                                 </Box>
