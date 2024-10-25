@@ -20,6 +20,7 @@
     "firebase": "^10.14.1",
     "framer-motion": "^11.3.28",
     "json-server": "^1.0.0-alpha.23",
+    "new-react-app": "file:",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.22.3",

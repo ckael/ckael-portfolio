@@ -31,7 +31,7 @@ const Projects = () => {
                                         <CardContent>
                                             <Typography variant="h6" color="primary">{Projet.Titre}</Typography><br />
                                             <Typography variant = "body2" color="secondary">{Projet.Description}</Typography><br />
-                                            <Typography variant = "body2" color="secondary">{Projet.Tech}</Typography>
+                                            <Typography variant = "body2" color="secondary">({Projet.Tech})</Typography>
                                         </CardContent>
                                         <CardActions>
                                             <IconButton size="large" color="secondary" href={Projet.Lien}>

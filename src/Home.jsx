@@ -1,5 +1,5 @@
 import { Grid, Typography, Container, Button } from "@mui/material";
-import Photo from '/img/me.png'
+import Photo from '/img/MyPic.png'
 import Cv from '/pdf/MyCV.pdf'
 const Home = () => {
 
