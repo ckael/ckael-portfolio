@@ -12,6 +12,10 @@
     border-radius: 20%;
     
 }
+html
+{
+    scroll-behavior: smooth;
+}
 .avatar
 {
     width: 60%;
