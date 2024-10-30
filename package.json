@@ -11,12 +11,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.0",
     "@fontsource/roboto": "^5.0.12",
     "@mui/icons-material": "^5.15.14",
     "@mui/material": "^5.15.14",
     "axios": "^1.7.2",
+    "emailjs-com": "^3.2.0",
     "firebase": "^10.14.1",
     "framer-motion": "^11.3.28",
     "json-server": "^1.0.0-alpha.23",

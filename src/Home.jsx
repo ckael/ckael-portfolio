@@ -4,21 +4,21 @@ import Cv from '/pdf/MyCV.pdf'
 const Home = () => {
 
     return (
-        <div id="Home">
+        <div id="Accueil">
             <Container >
                 <Grid  container alignItems="center">
                     <Grid item lg={7} sm={12} md={7} marginTop={5}>
-                        <Typography  color="primary" variant="body1"><strong>👋HELLO!👋</strong></Typography><br />
-                        <Typography color="secondary" variant="h4"><strong>I Am Riantsoa Ckaël</strong></Typography><br />
+                        <Typography  color="primary" variant="body1"><strong>👋Bonjour!👋</strong></Typography><br />
+                        <Typography color="secondary" variant="h4"><strong>Je suis Riantsoa Ckaël</strong></Typography><br />
                         <Typography color="secondary"  variant="h6">
-                            <strong>I am a</strong> <Typography className="text"  color="primary" variant="inherit">
-                                <strong>web developper</strong>
+                            <strong>Je suis un</strong> <Typography className="text"  color="primary" variant="inherit">
+                                <strong>développeur web</strong>
                             </Typography>
                         </Typography>
                       
                          <br />
-                        <Typography variant="body1" color="secondary">Thank's for visiting my portfolio you can download my CV by clicking  <br />👇Here👇</Typography>  <br />
-                        <Button className="Link" href={Cv} variant="outlined" color="primary"> <strong>Download CV</strong></Button>
+                        <Typography variant="body1" color="secondary">Merci de visiter mon portfolio. Vous pouvez télécharger mon CV en cliquant<br />👇Ici👇</Typography>  <br />
+                        <Button className="Link" href={Cv} variant="outlined" color="primary"> <strong>Télécharger</strong></Button>
                     </Grid>
                     <Grid item lg={5} sm={12} md={5} textAlign={'center'} marginTop={3}>
                             <img src={Photo} alt="My Pic" className="img"/>

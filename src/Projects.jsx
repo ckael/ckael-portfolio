@@ -15,11 +15,11 @@ const Projects = () => {
 
 
     return ( 
-        <div id="Projects">
+        <div id="Projets">
             <Container>
             <div className="TitleContainer">
                 <Typography variant = "h6" color="primary" className="Title">
-                    Projects  
+                  Projets  
                 </Typography>
             </div><br />
                 <Grid container columnSpacing={2} rowGap={2} >

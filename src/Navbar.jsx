@@ -17,7 +17,7 @@ import img from "/img/LOGO.png"
 import { Scale } from '@mui/icons-material';
 
 const Navbar = () => {
-    const pages = ['Home', 'About', 'Skills','Educations',,'Projects','Contact'];
+    const pages = ['Accueil', 'A propos', 'Compétences','Educations',,'Projets','Contact'];
     const [anchorElNav, setAnchorElNav] = useState(null);
 
     const handleOpenNavMenu = (event) => {
