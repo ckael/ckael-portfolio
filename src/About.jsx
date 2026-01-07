@@ -11,8 +11,8 @@ const About = () => {
                 </Grid>
                 <Grid className="About" item lg={8} padding={3} letterSpacing={3} xs={12} md={8} sm={12}  >
                     <Typography  variant="subtitle2" color="secondary">Nom: <Typography className="text" color="primary" variant="body2">RANAIVOMANANA Riantsoa Ckaël</Typography></Typography><br />
-                    <Typography  variant="subtitle2" color="secondary">Age: <Typography className="text" color="primary" variant="body2">22</Typography></Typography><br />
-                    <Typography  variant="subtitle2" color="secondary">Téléphone: <Typography className="text" color="primary" variant="body2">+261 32 99 072 18</Typography></Typography><br />
+                    <Typography  variant="subtitle2" color="secondary">Age: <Typography className="text" color="primary" variant="body2">23</Typography></Typography><br />
+                    <Typography  variant="subtitle2" color="secondary">Téléphone: <Typography className="text" color="primary" variant="body2">+261 34 06 176 33</Typography></Typography><br />
                     <Typography  variant="subtitle2" color="secondary">Addresse: <Typography className="text" color="primary" variant="body2">Lot AZ 88T Anosizato West ,Antananarivo,Madagascar</Typography></Typography><br />
                     <Typography variant="subtitle2" color="secondary">E-Mail: <Typography className="text" color="primary" variant="body2">Ranckael6@gmail.com</Typography></Typography><br />
                     <Grid container alignItems="center">
