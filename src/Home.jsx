@@ -11,8 +11,8 @@ const Home = () => {
                         <Typography  color="primary" variant="body1"><strong>👋Bonjour!👋</strong></Typography><br />
                         <Typography color="secondary" variant="h4"><strong>Je suis Riantsoa Ckaël</strong></Typography><br />
                         <Typography color="secondary"  variant="h6">
-                            <strong>Je suis un</strong> <Typography className="text"  color="primary" variant="inherit">
-                                <strong>développeur web</strong>
+                           <Typography   color="secondary" variant="body1">
+                            Un développeur Full Stack spécialisé en applications Web, Mobile et Desktop, avec une expertise en intégration de nouvelles technologies telles que la reconnaissance faciale et les solutions intelligentes.
                             </Typography>
                         </Typography>
                       
