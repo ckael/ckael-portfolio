@@ -59,7 +59,7 @@ const Contact = () => {
                 </form>
             </Grid>
         </Grid>
-        <Typography variant="body2" color="secondary" align="center"> Copyright © 2024 All rights reserved by<Button  variant="text" size="large" color="primary" className="Link" href="https://www.linkedin.com/in/riantsoa-ckael-ranaivomanana-7706892a8/" >Riantsoa Ckael</Button></Typography>
+        <Typography variant="body2" color="secondary" align="center"> Copyright © 2026 All rights reserved by<Button  variant="text" size="large" color="primary" className="Link" href="https://www.linkedin.com/in/riantsoa-ckael-ranaivomanana-7706892a8/" >Riantsoa Ckael</Button></Typography>
 <Box position={"fixed"} alignContent={"center"} bottom={16}>
 { success &&<motion.div initial={{opacity:0}} transition={{duration:5}} animate={{opacity:[1,0]}}> <Alert  sx={{width:"300px"}}  severity="success">Message envoyé avec succès !</Alert> </motion.div> }
 { faild && <motion.div initial={{opacity:0}} transition={{duration:5}} animate={{opacity:[1,0]}}> <Alert sx={{bgcolor:"primary",width:"400px"}} severity="warning">Une erreur est survenu lors de l'envoi de l'email </Alert> </motion.div>} 
