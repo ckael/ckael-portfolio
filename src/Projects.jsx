@@ -1,6 +1,6 @@
 import { IconButton,Container,Typography,Grid ,Card,CardActions,CardMedia,CardContent} from "@mui/material";
 import { useState,useEffect } from "react";
-import { GitHub} from "@mui/icons-material";
+import { Visibility} from "@mui/icons-material";
 import db from '../firebase';
 import { onSnapshot,collection } from "firebase/firestore";
 
@@ -25,7 +25,7 @@ const Projects = () => {
                 <Grid container columnSpacing={2} rowGap={2} >
                         {
                             Projet.map((Projet)=>(
-                                <Grid item key={Projet.id} sm = {12} lg = {4}>
+                                <Grid item key={Projet.id} sm = {12} md={4} lg = {4}>
                                     <Card className="myCard"  >
                                         <CardMedia image={Projet.Img} component="img" width={200} height={200}/>
                                         <CardContent>
@@ -35,7 +35,7 @@ const Projects = () => {
                                         </CardContent>
                                         <CardActions>
                                             <IconButton size="large" color="secondary" href={Projet.Lien}>
-                                                <GitHub/>
+                                                <Visibility/>
                                             </IconButton>
                                             
                                         </CardActions>

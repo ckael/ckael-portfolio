@@ -10,10 +10,9 @@ const Skills = () => {
                     <CardContent>
                         <Code color="primary"/>
                         <Typography variant="body1" color="primary">Front-end</Typography>
-                        <Typography color="secondary" variant="body2"><strong>ReactJs</strong></Typography>
-                        <Typography color="secondary" variant="body2"><strong>JQuery/Bootstrap/MaterialUI</strong></Typography>
-                        <Typography color="secondary" variant="body2"><strong>HTML/CSS/JS</strong></Typography>
-                        
+                        <Typography color="secondary" variant="body2"><strong>ReactJs/Next</strong></Typography>
+                        <Typography color="secondary" variant="body2"><strong>Flutter/Android(Kootlin)</strong></Typography>
+                        <Typography color="secondary" variant="body2"><strong>JQuery/Bootstrap/MaterialUI</strong></Typography>        
                     </CardContent>
                 </Card>
             </Grid>
@@ -22,8 +21,8 @@ const Skills = () => {
                     <CardContent>
                         <DataObject color="primary"/>
                         <Typography variant="body1" color="primary">Back-end</Typography>
-                        <Typography color="secondary" variant="body2"><strong>Spring </strong></Typography>
-                        <Typography color="secondary" variant="body2"><strong>Hibernate/JPA</strong></Typography>
+                        <Typography color="secondary" variant="body2"><strong>Spring/NodeJs </strong></Typography>
+                        <Typography color="secondary" variant="body2"><strong>Hibernate/JPA/Supabase</strong></Typography>
                         <Typography color="secondary" variant="body2"><strong>MySQL/MongoDb/SQLite</strong></Typography>
                          
                     </CardContent>
@@ -34,11 +33,9 @@ const Skills = () => {
                     <CardContent >
                         <Stars color="primary"/>
                         <Typography variant="body1" color="primary">Autres</Typography>
-                        <Typography color="secondary" variant="body2"><strong>Git</strong></Typography>
-                        <Typography color="secondary" variant="body2"><strong>Adobe Illustrator/Photoshop</strong></Typography>
-                        <Typography color="secondary" variant="body2"><strong>Postman/Insomnia</strong></Typography>
-                        
-                        
+                        <Typography color="secondary" variant="body2"><strong>OVH/Cpanel/Vercel</strong></Typography>
+                        <Typography color="secondary" variant="body2"><strong>Git/Github/Postman/Insomnia</strong></Typography>
+                        <Typography color="secondary" variant="body2"><strong>Adobe Illustrator/Photoshop/Canva</strong></Typography>
                     </CardContent>
                 </Card>
             </Grid>
