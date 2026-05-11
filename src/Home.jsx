@@ -1,5 +1,5 @@
-import { Grid, Typography, Container, Button } from "@mui/material";
-import Photo from '/img/MyPic.png'
+import { Grid, Typography, Container, Button, Box } from "@mui/material";
+import Photo from '/img/me.png'
 import Cv from '/pdf/MyCV.pdf'
 const Home = () => {
 
@@ -21,7 +21,22 @@ const Home = () => {
                         <Button className="Link" href={Cv} variant="outlined" color="primary"> <strong>Télécharger</strong></Button>
                     </Grid>
                     <Grid item lg={5} sm={12} md={5} textAlign={'center'} marginTop={3}>
+                        <Box
+                            sx={{
+                                width: 220,
+                                height: 220,
+                                display: 'inline-flex',
+                                alignItems: 'center',
+                                justifyContent: 'center',
+                                bgcolor: 'white',
+                                border: 2,
+                                borderColor: 'primary.main',
+                                borderRadius: '50%',
+                                overflow: 'hidden',
+                            }}
+                        >
                             <img src={Photo} alt="My Pic" className="img"/>
+                        </Box>
                     </Grid>
                 </Grid>
             </Container>
