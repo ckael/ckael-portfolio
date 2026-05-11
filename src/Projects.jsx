@@ -34,7 +34,7 @@ const Projects = () => {
                                             <Typography variant = "body2" color="secondary">({Projet.Tech})</Typography>
                                         </CardContent>
                                         <CardActions>
-                                            <IconButton size="large" color="secondary" href={Projet.Lien}>
+                                            <IconButton size="large" color="secondary" href={Projet.Lien} target="_blank" rel="noopener noreferrer">
                                                 <Visibility/>
                                             </IconButton>
                                             
