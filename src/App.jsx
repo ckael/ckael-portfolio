@@ -9,6 +9,7 @@ import Projects from "./Projects";
 import "./style.css";
 import { createTheme,ThemeProvider } from "@mui/material";
 import { motion } from "framer-motion";
+import { pageTransition } from "./motion";
 function App() {
   const theme = createTheme({
     palette:{
@@ -54,7 +55,7 @@ function App() {
   })
   return (
     < >
-    <motion.div initial={{scaleY:0, scaleX:0}} transition={{duration:1}} animate={{scaleY:1, scaleX:1}}> 
+    <motion.div {...pageTransition}> 
     <ThemeProvider theme={theme}>
     <Navbar/> 
       <Home />

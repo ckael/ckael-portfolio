@@ -3,6 +3,8 @@ import { useState,useEffect } from "react";
 import { Visibility} from "@mui/icons-material";
 import db from '../firebase';
 import { onSnapshot,collection } from "firebase/firestore";
+import { motion } from "framer-motion";
+import { cardReveal, hoverLift, sectionReveal, staggerContainer } from "./motion";
 
 const Projects = () => {
     const [Projet,setProjet] = useState([]);
@@ -15,18 +17,18 @@ const Projects = () => {
 
 
     return ( 
-        <div id="Projets">
+        <motion.div id="Projets" variants={sectionReveal} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.18 }}>
             <Container>
             <div className="TitleContainer">
                 <Typography variant = "h6" color="primary" className="Title">
                   Projets  
                 </Typography>
             </div><br />
-                <Grid container columnSpacing={2} rowGap={2} >
+                <Grid component={motion.div} variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }} container columnSpacing={2} rowGap={2} >
                         {
                             Projet.map((Projet)=>(
-                                <Grid item key={Projet.id} sm = {12} md={4} lg = {4}>
-                                    <Card className="myCard"  >
+                                <Grid component={motion.div} variants={cardReveal} item key={Projet.id} sm = {12} md={4} lg = {4}>
+                                    <Card component={motion.div} whileHover={hoverLift} className="myCard"  >
                                         <CardMedia image={Projet.Img} component="img" width={200} height={200}/>
                                         <CardContent>
                                             <Typography variant="h6" color="primary">{Projet.Titre}</Typography><br />
@@ -34,7 +36,7 @@ const Projects = () => {
                                             <Typography variant = "body2" color="secondary">({Projet.Tech})</Typography>
                                         </CardContent>
                                         <CardActions>
-                                            <IconButton size="large" color="secondary" href={Projet.Lien} target="_blank" rel="noopener noreferrer">
+                                            <IconButton component={motion.a} whileHover={{ scale: 1.12, rotate: -4 }} whileTap={{ scale: 0.9 }} size="large" color="secondary" href={Projet.Lien} target="_blank" rel="noopener noreferrer">
                                                 <Visibility/>
                                             </IconButton>
                                             
@@ -45,7 +47,7 @@ const Projects = () => {
                         }
                 </Grid>
             </Container>
-        </div>
+        </motion.div>
      );
 }
  

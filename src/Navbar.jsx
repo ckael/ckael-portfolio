@@ -14,10 +14,10 @@ import MenuItem from '@mui/material/MenuItem';
 import { Grid } from '@mui/material';
 import { useState } from "react";
 import img from "/img/LOGO.png"
-import { Scale } from '@mui/icons-material';
+import { motion } from "framer-motion";
 
 const Navbar = () => {
-    const pages = ['Accueil', 'A propos', 'Compétences','Educations',,'Projets','Contact'];
+    const pages = ['Accueil', 'A propos', 'Compétences','Educations','Projets','Contact'];
     const [anchorElNav, setAnchorElNav] = useState(null);
 
     const handleOpenNavMenu = (event) => {
@@ -29,7 +29,7 @@ const Navbar = () => {
     };
     return ( 
     <>
-            <AppBar className="bar" position="sticky">
+            <AppBar component={motion.header} initial={{ y: -72, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.55, ease: 'easeOut' }} className="bar" position="sticky">
                 <Container>
                     <Toolbar disableGutters>
                                 <Typography
@@ -47,7 +47,9 @@ const Navbar = () => {
                                 </Typography>
 
                                 <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
-                                    <IconButton  
+                                    <IconButton
+                                    component={motion.button}
+                                    whileTap={{ scale: 0.92 }}
                                     size="large"
                                     aria-label="account of current user"
                                     aria-controls="menu-appbar"
@@ -78,7 +80,7 @@ const Navbar = () => {
                                     {pages.map((page) => (
                                        
                                        <MenuItem className="bar" key={page} onClick={handleCloseNavMenu}>
-                                        <Button className="Link" color="secondary"   href={"#"+page} variant="text"><strong>{page}</strong></Button> 
+                                        <Button component={motion.a} whileHover={{ x: 4, color: 'var(--color-primary)' }} whileTap={{ scale: 0.96 }} className="Link" color="secondary"   href={"#"+page} variant="text"><strong>{page}</strong></Button> 
                                         </MenuItem>
 
                                     ))}
@@ -103,6 +105,9 @@ const Navbar = () => {
                                     {pages.map((page) => (
                                     <Grid item key={page}>
                                     <Button
+                                        component={motion.a}
+                                        whileHover={{ y: -2, color: 'var(--color-primary)' }}
+                                        whileTap={{ scale: 0.96 }}
                                         href={"#"+page}
                                         onClick={handleCloseNavMenu}
                                         color="secondary"
@@ -117,8 +122,8 @@ const Navbar = () => {
 
                                 <Box sx={{ flexGrow: 0}}>
                                     <Tooltip title="Logo">
-                                    <IconButton  sx={{ p: 0 }}>
-                                        <Avatar alt="Remy Sharp" src={img} />
+                                    <IconButton component={motion.button} whileHover={{ scale: 1.08, rotate: 3 }} whileTap={{ scale: 0.92 }} sx={{ p: 0 }}>
+                                        <Avatar alt="Logo Ckaël" src={img} />
                                     </IconButton>
                                     </Tooltip>
                                     

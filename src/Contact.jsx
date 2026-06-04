@@ -2,6 +2,7 @@ import { Button, Grid, CircularProgress,TextField, Typography, Alert, Box } from
 import { useState } from "react";
 import emailjs from 'emailjs-com';
 import { motion } from "framer-motion";
+import { cardReveal, hoverLift, sectionReveal } from "./motion";
 
 const Contact = () => {
     const [name,setName] = useState('');
@@ -42,11 +43,11 @@ const Contact = () => {
         }
     };
 
-    return (<div id="Contact" >
+    return (<motion.div id="Contact" variants={sectionReveal} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }}>
         <div className="TitleContainer"><Typography className="Title" variant="h6" color="primary">Contact</Typography></div>
         <Grid container  justifyContent="center" >
-            <Grid item lg={6} md={6} sm={9} xs={9}>
-                <form align="center" onSubmit={sendEmail} className="myCard">
+            <Grid component={motion.div} variants={cardReveal} item lg={6} md={6} sm={9} xs={9}>
+                <motion.form whileHover={hoverLift} align="center" onSubmit={sendEmail} className="myCard">
                     <Grid rowSpacing={3} container paddingRight={3} paddingLeft={3} columnSpacing={2} marginTop={3} marginBottom={3} >
                         <Grid item lg={12} sm={12} xs={12} md={12}>
                             <TextField {...textFieldStyle} onChange={(e)=>{setName(e.target.value)}} name="name"className="myTextField" fullWidth label="Nom" required />
@@ -61,11 +62,11 @@ const Contact = () => {
                             <TextField {...textFieldStyle} name="message" onChange={(e)=>{setMessage(e.target.value)}} className="myTextField" fullWidth label="Message" required />
                         </Grid>
                         <Grid item lg={12} sm={12} xs={12} md={12} paddingBottom={3}>
-                            <Button  type="submit"variant="outlined" size="large" color="primary" className="Link" >{ !pending ? "Envoyer" : <CircularProgress size={25} color="primary" />}</Button>
+                            <Button component={motion.button} whileHover={hoverLift} whileTap={{ scale: 0.96 }} type="submit"variant="outlined" size="large" color="primary" className="Link" >{ !pending ? "Envoyer" : <CircularProgress size={25} color="primary" />}</Button>
                         </Grid>
                         
                     </Grid>
-                </form>
+                </motion.form>
             </Grid>
         </Grid>
         <Typography variant="body2" color="secondary" align="center"> Copyright © 2026 All rights reserved by<Button  variant="text" size="large" color="primary" className="Link" href="https://www.linkedin.com/in/riantsoa-ckael-ranaivomanana-7706892a8/" >Riantsoa Ckael</Button></Typography>
@@ -73,7 +74,7 @@ const Contact = () => {
 { success &&<motion.div initial={{opacity:0}} transition={{duration:5}} animate={{opacity:[1,0]}}> <Alert  sx={{width:"300px"}}  severity="success">Message envoyé avec succès !</Alert> </motion.div> }
 { faild && <motion.div initial={{opacity:0}} transition={{duration:5}} animate={{opacity:[1,0]}}> <Alert sx={{bgcolor:"primary",width:"400px"}} severity="warning">Une erreur est survenu lors de l'envoi de l'email </Alert> </motion.div>} 
 </Box>
-    </div >);
+    </motion.div >);
 }
 
 export default Contact;

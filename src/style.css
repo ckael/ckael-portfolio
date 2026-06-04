@@ -35,6 +35,7 @@ html
 {
     width: 60%;
     height: auto;
+    will-change: transform;
 }
 .myTextField
 {
@@ -75,4 +76,23 @@ html
     border-radius: 8px !important;
     margin-top: 10px;
     box-shadow: var(--shadow-card)!important;
+    transform-origin: center;
+    transition: border-color 220ms ease, box-shadow 220ms ease;
+    will-change: transform;
+}
+.myCard:hover
+{
+    border-color: rgba(242, 201, 76, 0.42);
+    box-shadow: 0 18px 42px rgba(0, 0, 0, 0.36)!important;
+}
+
+@media (prefers-reduced-motion: reduce)
+{
+    *, *::before, *::after
+    {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+    }
 }
