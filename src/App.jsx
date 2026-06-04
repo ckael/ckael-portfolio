@@ -12,12 +12,43 @@ import { motion } from "framer-motion";
 function App() {
   const theme = createTheme({
     palette:{
+      mode: 'dark',
       primary:{
-        main:'#FFFF33',
-        light:'#FFFF99'
+        main:'#F2C94C',
+        light:'#FFE08A',
+        dark:'#B98912',
+        contrastText:'#111827'
       },
       secondary:{
-        main:'#FFFFFF'
+        main:'#E5E7EB',
+        light:'#F9FAFB'
+      },
+      background:{
+        default:'#111827',
+        paper:'#1F2937'
+      },
+      text:{
+        primary:'#F9FAFB',
+        secondary:'#CBD5E1'
+      }
+    },
+    components:{
+      MuiButton:{
+        styleOverrides:{
+          outlinedPrimary:{
+            borderColor:'#F2C94C',
+            '&:hover':{
+              borderColor:'#FFE08A',
+              backgroundColor:'rgba(242, 201, 76, 0.08)'
+            }
+          }
+        }
+      },
+      MuiTextField:{
+        defaultProps:{
+          color:'primary',
+          variant:'standard'
+        }
       }
     }
   })

@@ -33,6 +33,15 @@ const Contact = () => {
             isFaild(true)
         });
     }
+    const textFieldStyle = {
+        inputProps: { style: { color: 'var(--color-text)' } },
+        InputLabelProps: { style: { color: 'var(--color-primary-light)' } },
+        sx: {
+            '& .MuiInput-underline:before': { borderBottomColor: 'rgba(203, 213, 225, 0.45)' },
+            '& .MuiInput-underline:hover:before': { borderBottomColor: 'var(--color-primary)' },
+        }
+    };
+
     return (<div id="Contact" >
         <div className="TitleContainer"><Typography className="Title" variant="h6" color="primary">Contact</Typography></div>
         <Grid container  justifyContent="center" >
@@ -40,16 +49,16 @@ const Contact = () => {
                 <form align="center" onSubmit={sendEmail} className="myCard">
                     <Grid rowSpacing={3} container paddingRight={3} paddingLeft={3} columnSpacing={2} marginTop={3} marginBottom={3} >
                         <Grid item lg={12} sm={12} xs={12} md={12}>
-                            <TextField inputProps={{style:{color:'#FFFFFF'}}} InputLabelProps={{style:{color:'#FFFF33'}}} onChange={(e)=>{setName(e.target.value)}} name="name"className="myTextField" fullWidth color="primary" variant="standard" label="Nom" required />
+                            <TextField {...textFieldStyle} onChange={(e)=>{setName(e.target.value)}} name="name"className="myTextField" fullWidth label="Nom" required />
                         </Grid>
                         <Grid item lg={12} sm={12} xs={12} md={12}>
-                            <TextField inputProps={{style:{color:'#FFFFFF'}}} InputLabelProps={{style:{color:'#FFFF33'}}} onChange={(e)=>{setPhone(e.target.value)}} name="phone" className="myTextField" fullWidth color="primary" variant="standard" label="Téléphone" required />
+                            <TextField {...textFieldStyle} onChange={(e)=>{setPhone(e.target.value)}} name="phone" className="myTextField" fullWidth label="Téléphone" required />
                         </Grid>
                         <Grid item lg={12} sm={12} xs={12} md={12}>
-                            <TextField inputProps={{style:{color:'#FFFFFF'}}} InputLabelProps={{style:{color:'#FFFF33'}}} name="email" onChange={(e)=>{setMail(e.target.value)}} className="myTextField" fullWidth color="primary" variant="standard" label="Email" required />
+                            <TextField {...textFieldStyle} name="email" onChange={(e)=>{setMail(e.target.value)}} className="myTextField" fullWidth label="Email" required />
                         </Grid>
                         <Grid item lg={12} sm={12} xs={12} md={12}>
-                            <TextField inputProps={{style:{color:'#FFFFFF'}}} InputLabelProps={{style:{color:'#FFFF33'}}} name="message" onChange={(e)=>{setMessage(e.target.value)}} className="myTextField" fullWidth color="primary" variant="standard" label="Message" required />
+                            <TextField {...textFieldStyle} name="message" onChange={(e)=>{setMessage(e.target.value)}} className="myTextField" fullWidth label="Message" required />
                         </Grid>
                         <Grid item lg={12} sm={12} xs={12} md={12} paddingBottom={3}>
                             <Button  type="submit"variant="outlined" size="large" color="primary" className="Link" >{ !pending ? "Envoyer" : <CircularProgress size={25} color="primary" />}</Button>

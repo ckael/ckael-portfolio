@@ -28,10 +28,11 @@ const Home = () => {
                                 display: 'inline-flex',
                                 alignItems: 'center',
                                 justifyContent: 'center',
-                                bgcolor: 'white',
+                                bgcolor: 'background.paper',
                                 border: 2,
                                 borderColor: 'primary.main',
                                 borderRadius: '50%',
+                                boxShadow: '0 18px 40px rgba(0, 0, 0, 0.3)',
                                 overflow: 'hidden',
                             }}
                         >

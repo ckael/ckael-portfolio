@@ -1,4 +1,18 @@
-
+:root{
+    --color-bg: #111827;
+    --color-surface: #1F2937;
+    --color-surface-soft: #273449;
+    --color-primary: #F2C94C;
+    --color-primary-light: #FFE08A;
+    --color-text: #F9FAFB;
+    --color-text-muted: #CBD5E1;
+    --color-border: rgba(242, 201, 76, 0.55);
+    --shadow-card: 0 14px 30px rgba(0, 0, 0, 0.28);
+}
+body{
+    background: var(--color-bg);
+    color: var(--color-text);
+}
 .Link{
     text-transform: none !important;
 }
@@ -24,7 +38,7 @@ html
 }
 .myTextField
 {
-   color: #FFFF33!important;
+   color: var(--color-primary)!important;
 }
 
 .Title
@@ -32,11 +46,13 @@ html
     align-self: center !important;
     width: auto!important;
     border-bottom:solid;
-    border-color: #FFFF33!important;
+    border-color: var(--color-primary)!important;
    
 }
 .bar{
-    background-color: #212121!important;
+    background-color: rgba(17, 24, 39, 0.95)!important;
+    border-bottom: 1px solid rgba(242, 201, 76, 0.18);
+    backdrop-filter: blur(10px);
 }
 .TitleContainer
 {
@@ -48,14 +64,15 @@ html
 .About
 {
     border: solid;
-    border-color: #FFFF33;
-    border-radius: 40px;
+    border-color: var(--color-border);
+    border-radius: 16px;
+    background-color: rgba(31, 41, 55, 0.72);
 }
 .myCard
 {
-    background-color: #212121 !important;
+    background-color: var(--color-surface) !important;
+    border: 1px solid rgba(242, 201, 76, 0.16);
+    border-radius: 8px !important;
     margin-top: 10px;
-    box-shadow: 9px 9px 1px -1px rgba(0,0,0,0.2), 
-                0px 1px 1px 0px rgba(0,0,0,0.14), 
-                0px 1px 3px 0px rgba(0,0,0,0.12)!important
+    box-shadow: var(--shadow-card)!important;
 }
