@@ -20,7 +20,7 @@ const Home = () => {
                       
                          <br />
                         <Typography variant="body1" color="secondary">Merci de visiter mon portfolio. Vous pouvez télécharger mon CV en cliquant<br />👇Ici👇</Typography>  <br />
-                        <Button component={motion.a} whileHover={hoverLift} whileTap={{ scale: 0.96 }} className="Link" href={Cv} variant="outlined" color="primary"> <strong>Télécharger</strong></Button>
+                        <Button component={motion.a} aria-label="Télécharger le CV de Riantsoa Ckaël" whileHover={hoverLift} whileTap={{ scale: 0.96 }} className="Link" href={Cv} variant="outlined" color="primary"> <strong>Télécharger</strong></Button>
                     </Grid>
                     <Grid component={motion.div} variants={cardReveal} item lg={5} sm={12} md={5} textAlign={'center'} marginTop={3}>
                         <Box
@@ -41,7 +41,7 @@ const Home = () => {
                                 overflow: 'hidden',
                             }}
                         >
-                            <img src={Photo} alt="My Pic" className="img"/>
+                            <img src={Photo} alt="Portrait de Riantsoa Ckaël, développeur Full Stack" className="img"/>
                         </Box>
                     </Grid>
                 </Grid>
